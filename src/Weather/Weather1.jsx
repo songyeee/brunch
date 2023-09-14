@@ -13,7 +13,6 @@ const ContainerWrap = styled.div`
         top:50%;
         transform: translate(-50%, -50%);
         position: absolute;
-        border: 1px blue solid;
         padding: 20px;
     }
     input{
@@ -27,6 +26,20 @@ const ResultWrap = styled.div`
     padding: 10px;
     border: 1px black solid;
     border-radius:8px;
+    border: 2px black solid;
+    .city{
+        font-size: 24px;
+    }
+    .temprature{
+        font-size: 60px;
+        margin-top: 8px;
+        text-align: center;
+    }
+    .sky{
+        font-size: 20px;
+        text-align: right;
+        margin-top:8px;
+    }
 
 `;
 
@@ -68,7 +81,8 @@ function Weatherbox1() {
                 Object.keys(result).length !==0 && (
                     <ResultWrap>
                         <div className='city'>{result.name}</div>
-                        <div className='temprature'>{result.main.temp}</div>
+                        <div className='temprature'>
+                            {Math.round(((result.main.temp-273.15) * 10)) / 10}ºC</div>
                         <div className='sky'>{result.weather[0].main}</div>
                     </ResultWrap>
                     )
