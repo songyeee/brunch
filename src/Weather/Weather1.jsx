@@ -63,7 +63,7 @@ function Weatherbox1() {
                     <ResultWrap>
                         <div className='city'>{result.name}</div>
                         <div className='temprature'>{result.main.temp}</div>
-                        <div className='sky'>{result.weather[0]}</div>
+                        <div className='sky'>{result.weather[0].main}</div>
                     </ResultWrap>
                     )
                 }
