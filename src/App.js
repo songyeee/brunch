@@ -1,4 +1,3 @@
-
 import Header from './components/Header';
 import MainNews from './components/Main/MainNews';
 import MainNewsItem from './components/Main/MainNewsItem';

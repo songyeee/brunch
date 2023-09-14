@@ -3,22 +3,26 @@ import { async } from 'q';
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
+
 const ContainerWrap = styled.div`
-    width: 100vw;
-    height: 100vh;
-    border: 1px gray solid;
+    width: 30vw;
+    height: 60vh;
+   
+
     .Weatherbox1{
         left: 50%;
         top:50%;
         transform: translate(-50%, -50%);
         position: absolute;
         padding: 20px;
+       
     }
     input{
         padding: 16px;
         border: 2px black solid;
         border-radius: 20px;
     }
+    
 `;
 const ResultWrap = styled.div`
     margin-top:60px;
@@ -45,6 +49,7 @@ function Weatherbox1() {
     const [location, setLocation] = useState('');
     const [result,setResult] = useState({});
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_KEY}`;
+
     const searchWeather = async (e) =>{
         if(e.key ==='Enter'){
             try{
@@ -62,7 +67,7 @@ function Weatherbox1() {
     }
   return (
     <ContainerWrap>
-        <div className='Weatherbox1'>
+        <div className='cotainer'>
             <input
             placeholder = "도시를 입력하세요"
             value={location}
