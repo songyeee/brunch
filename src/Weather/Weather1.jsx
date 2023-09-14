@@ -16,12 +16,18 @@ const ContainerWrap = styled.div`
         border: 1px blue solid;
         padding: 20px;
     }
+    input{
+        padding: 16px;
+        border: 2px black solid;
+        border-radius: 20px;
+    }
 `;
 const ResultWrap = styled.div`
     margin-top:60px;
     padding: 10px;
     border: 1px black solid;
     border-radius:8px;
+
 `;
 
 function Weatherbox1() {
