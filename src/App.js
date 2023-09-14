@@ -5,6 +5,7 @@ import usePromise from './components/hook/usePromise';
 import { useCallback, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Weatherbox1 from './components/Main/Weatherbox1';
 
 
 function App() {
@@ -12,8 +13,9 @@ function App() {
     <div className="App">
       <Header />
       <div>
-      <div style={{width:'272%'}}>abcd</div>
+      <Weatherbox1 />
       <MainNews />
+
       </div>
     </div>
   );
