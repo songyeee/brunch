@@ -8,7 +8,7 @@ const ContainerWrap = styled.div`
     height: 100vh;
     border: 1px gray solid;
 
-    .Weather1{
+    .Weatherbox1{
         left: 50%;
         top:50%;
         transform: translate(-50%, -50%);
@@ -19,14 +19,17 @@ const ContainerWrap = styled.div`
 `;
 
 
-function Weather1() {
+function Weatherbox1() {
     const url = `https://api.openweathermap.org/data/2.5/weather?q=Busan&appid=13370407832c91a4e9588f1ce73f66111`;
-    const [loacation, setLocation] = useState('');
+    
+    const [location, setLocation] = useState('');
+
     const searchWeather = async (e) =>{
         if(e.key ==='Enter'){
             try{
                 const data = await axios({
-                    method:'get'
+                    method:'get',
+                    url:url
                 })
             }
             catch(err){
@@ -37,9 +40,17 @@ function Weather1() {
 
   return (
     <ContainerWrap>
-        <div className='weahterbox1'></div>
+        <div className='Weatherbox1'>
+            <input 
+            placeholder = "도시를 입력하세요"
+            value={location}
+            onChange={(e)=>setLocation(e.target.value)} 
+            type="text"
+            onKeyDown={searchWeather}
+            />
+        </div>
     </ContainerWrap>
   )
 }
 
-export default Weather1;
+export default Weatherbox1;
