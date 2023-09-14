@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Header />
       <div>
-      <div style={{width:'50%'}}>abcd</div>
+      <div style={{width:'272%'}}>abcd</div>
       <MainNews />
       </div>
     </div>
