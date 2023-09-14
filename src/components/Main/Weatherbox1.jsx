@@ -6,8 +6,8 @@ import styled from 'styled-components';
 
 const ContainerWrap = styled.div`
     width: 30vw;
-    height: 60vh;
-   
+    height: 30vh;
+    margin: 50px;
 
     .Weatherbox1{
         left: 50%;
