@@ -39,8 +39,8 @@ function Weatherbox1() {
                     method:'get',
                     url: url
                 })
-                console.log(data);
-                setResult(data);
+                console.log(data.data);
+                setResult(data.data);
             }
             catch(err){
                 alert(err);
@@ -61,9 +61,9 @@ function Weatherbox1() {
             {
                 Object.keys(result).length !==0 && (
                     <ResultWrap>
-                        <div className='city'>{result.data.name}</div>
-                        <div className='temprature'>{result.data.main.temp}</div>
-                        <div className='sky'>{result.data.weather[0]}</div>
+                        <div className='city'>{result.name}</div>
+                        <div className='temprature'>{result.main.temp}</div>
+                        <div className='sky'>{result.weather[0]}</div>
                     </ResultWrap>
                     )
                 }
