@@ -3,3 +3,8 @@
 .App {
     font-family: 'Orbit', sans-serif;
 }
+
+.App .Weatherbox1 {
+    display: flex;
+    
+}

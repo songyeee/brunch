@@ -3,9 +3,6 @@ import { async } from 'q';
 import React, { useState } from 'react';
 import styled from 'styled-components';
 const ContainerWrap = styled.div`
-    width: 100vw;
-    height: 100vh;
-    border: 1px gray solid;
     .Weatherbox1{
         left: 50%;
         top:50%;
@@ -74,7 +71,7 @@ function Weatherbox1() {
                     <ResultWrap>
                         <div className='city'>{result.name}</div>
                         <div className='temprature'>
-                            {Math.round(((result.main.temp-273.15) * 10)) / 10}ºC</div>
+                            {Math.round(((result.main.temp-273.15) * 10)) / 10}°C</div>
                         <div className='sky'>{result.weather[0].main}</div>
                     </ResultWrap>
                     )
