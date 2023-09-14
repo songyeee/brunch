@@ -5,9 +5,10 @@ import styled from 'styled-components';
 
 
 const ContainerWrap = styled.div`
-    width: 30vw;
-    height: 30vh;
-    margin: 50px;
+    width: 35vw;
+    height: 600vh;
+    margin: 40px;
+    background-color: blue;
 
     .Weatherbox1{
         left: 50%;
@@ -22,8 +23,8 @@ const ContainerWrap = styled.div`
         border: 2px black solid;
         border-radius: 20px;
     }
-    
 `;
+
 const ResultWrap = styled.div`
     margin-top:60px;
     padding: 10px;
