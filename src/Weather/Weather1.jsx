@@ -18,19 +18,21 @@ const ContainerWrap = styled.div`
     }
 `;
 
-
 function Weatherbox1() {
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=Busan&appid=13370407832c91a4e9588f1ce73f66111`;
+    const API_KEY = "13370407832c91a4e9588f1ce73f6611";
     
     const [location, setLocation] = useState('');
 
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_KEY}`;
+    
     const searchWeather = async (e) =>{
         if(e.key ==='Enter'){
             try{
                 const data = await axios({
                     method:'get',
-                    url:url
+                    url: url
                 })
+                console.log(data);
             }
             catch(err){
                 alert(err);
