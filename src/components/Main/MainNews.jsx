@@ -9,6 +9,5 @@ function MainNews() {
     <div>MainNews</div>
   )
 }
-console.log('하이하이')
 
 export default MainNews;

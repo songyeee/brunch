@@ -17,11 +17,18 @@ const ContainerWrap = styled.div`
         padding: 20px;
     }
 `;
+const ResultWrap = styled.div`
+    margin-top:60px;
+    padding: 10px;
+    border: 1px black solid;
+    border-radius:8px;
+`;
 
 function Weatherbox1() {
     const API_KEY = "13370407832c91a4e9588f1ce73f6611";
     
     const [location, setLocation] = useState('');
+    const [result,setResult] = useState({});
 
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_KEY}`;
     
@@ -33,6 +40,7 @@ function Weatherbox1() {
                     url: url
                 })
                 console.log(data);
+                setResult(data);
             }
             catch(err){
                 alert(err);
@@ -50,6 +58,16 @@ function Weatherbox1() {
             type="text"
             onKeyDown={searchWeather}
             />
+            {
+                Object.keys(result).length !==0 && (
+                    <ResultWrap>
+                        <div className='city'>{result.data.name}</div>
+                        <div className='temprature'>{result.data.main.temp}</div>
+                        <div className='sky'>{result.data.weather[0]}</div>
+                    </ResultWrap>
+                    )
+                }
+
         </div>
     </ContainerWrap>
   )
