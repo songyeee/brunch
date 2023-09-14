@@ -2,7 +2,8 @@ import axios from 'axios';
 import React, {useEffect, useState} from 'react'
 import MainNewsItem from './MainNewsItem';
 import usePromise from '../hook/usePromise';
-
+import styled from 'styled-components';
+import './MainNews.css';
 
 
 function MainNews() {
@@ -35,6 +36,7 @@ function MainNews() {
     </div>
   )
 }
+
 
 
 export default MainNews;
