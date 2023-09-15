@@ -9,23 +9,24 @@ const ContainerWrap = styled.div`
     height: 100vh;
     border: 1px gray solid;
     .Weatherbox1{
-        transform: translate(-50%, -50%);
-        padding: 20px;
+       
        
     }
     input{
-        padding: 16px;
+        
+        height: 40px;
         border: 2px black solid;
         border-radius: 20px;
+        width: 300px;
     }
 `;
 
 const ResultWrap = styled.div`
-    margin-top:60px;
     padding: 10px;
     border: 1px black solid;
     border-radius:8px;
     border: 2px black solid;
+    background-color: white;
     .city{
         font-size: 24px;
     }

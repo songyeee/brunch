@@ -3,10 +3,25 @@ import axios from 'axios';
 import styled from 'styled-components';
 
 const WeatherBlock = styled.div `
-    background-color: #ffff88;
     border-radius: 10px;
     margin: 0% auto;
     display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 0px 8px 0px rgba(199, 199, 199, 0.68);
+
+    h2 {
+      display: flex;
+      justify-content: space-around;
+    }
+    p {
+      display: flex;
+      justify-content: space-around;
+      line-height: 0.5em;
+      letter-spacing: 0.2rem;
+      font-size : 20px;
+      font-style: border;
+    }
+    
 `
 
 
@@ -45,10 +60,10 @@ function Weather() {
     <div className="Weather">
       {weatherData && (
         <div>
-          <h2>✨오늘의 날씨✨</h2>
-          <p>지역: {weatherData.name}</p>
-          <p>온도: {weatherData.main.temp}°C</p>
-          <p>날씨: {weatherData.weather[0].description}</p>
+          <h2>🍀오늘의 날씨🍀</h2>
+          <p>🚩지역: {weatherData.name}</p>
+          <p>🌡️현재 온도: {weatherData.main.temp}°C</p>
+          <p>🌞날씨: {weatherData.weather[0].description}</p>
           </div>
       )}
     </div>

@@ -8,6 +8,8 @@ import './App.css';
 import Weatherbox1 from './components/Main/Weatherbox1';
 import Clock from './components/Main/Clock';
 import Weather from './components/Main/Weather';
+import Ootd from './components/Main/Ootd';
+
 function App() {
   return (
      <div className="App">

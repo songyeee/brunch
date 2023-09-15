@@ -5,7 +5,6 @@ import usePromise from '../hook/usePromise';
 import styled from 'styled-components';
 
 
-
 function MainNews() {
   
   const url = `https://newsapi.org/v2/top-headlines?country=kr&apiKey=21a35ddfc00a4bef911f88055453a6e3`;
