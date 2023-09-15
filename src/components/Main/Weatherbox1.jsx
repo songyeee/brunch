@@ -31,11 +31,6 @@ const ResultWrap = styled.div`
     background-color: white;
     margin-top: 70px;
 
-    .resultbox{
-        
-    }
-
-
     .city{
         font-size: 24px;
     }
@@ -67,7 +62,7 @@ function Weatherbox1() {
                 setResult(data.data);
             }
             catch(err){
-                alert(err);
+                alert('없는 지역입니다.');
             }
         }
     }
