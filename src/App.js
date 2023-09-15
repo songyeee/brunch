@@ -8,9 +8,6 @@ import './App.css';
 import Weatherbox1 from './components/Main/Weatherbox1';
 import Clock from './components/Main/Clock';
 import Weather from './components/Main/Weather';
-
-
-
 function App() {
   return (
      <div className="App">
@@ -20,13 +17,18 @@ function App() {
        <div className="mainContainer">
       <div>
       <Weatherbox1 />
-      <MainNews />
       <Weather />
       </div>
       <MainNews />
        </div>
      </div>
-
   );
 }
 export default App;
+
+
+
+
+
+
+

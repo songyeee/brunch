@@ -3,7 +3,7 @@ import React, {useEffect, useState} from 'react'
 import MainNewsItem from './MainNewsItem';
 import usePromise from '../hook/usePromise';
 import styled from 'styled-components';
-import './MainNews.css';
+
 
 
 function MainNews() {
