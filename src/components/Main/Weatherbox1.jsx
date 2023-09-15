@@ -3,6 +3,10 @@ import { async } from 'q';
 import React, { useState } from 'react';
 import styled from 'styled-components';
 const ContainerWrap = styled.div`
+.resultbox{
+    margin-left:30%;
+}
+   
     .Weatherbox1{
         left: 50%;
         top:50%;
@@ -26,6 +30,10 @@ const ResultWrap = styled.div`
     border: 2px black solid;
     background-color: white;
     margin-top: 70px;
+
+    .resultbox{
+        
+    }
 
 
     .city{
@@ -73,6 +81,8 @@ function Weatherbox1() {
             type="text"
             onKeyDown={searchWeather}
             />
+        </div>
+        <div className = 'resultbox'>
             {
                 Object.keys(result).length !==0 && (
                     <ResultWrap>
@@ -83,7 +93,7 @@ function Weatherbox1() {
                     </ResultWrap>
                     )
                 }
-        </div>
+            </div>
     </ContainerWrap>
   )
 }
