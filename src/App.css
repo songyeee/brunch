@@ -28,3 +28,12 @@
     margin-left: 10px;
     margin-right: 10px;
 }
+
+.App .weather {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    background-color: white;
+
+}

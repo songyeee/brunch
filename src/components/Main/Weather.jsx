@@ -23,6 +23,7 @@ const WeatherBlock = styled.div `
       letter-spacing: 0.2rem;
       font-size : 20px;
       font-style: border;
+      margin-bottom: 30px;
     }
     img {
       height: 200px;
@@ -86,7 +87,7 @@ function Weather() {
 
 
           <div className='line'></div>
-          <p> ootd 추천: </p>
+          <p> 👕ootd 추천👖 : </p>
            <img src={weatherImage} />
           </div>
       )}
