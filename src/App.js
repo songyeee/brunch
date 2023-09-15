@@ -20,10 +20,12 @@ function App() {
        <Clock />
        <div className="mainContainer">
       <div>
-      <Weather />
       <Weatherbox1 />
+      <Weather />
       </div>
+      <div className="news">
       <MainNews />
+      </div>
        </div>
      </div>
 
