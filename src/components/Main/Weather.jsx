@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
-
 import summer from './img/summer.png'
 import sf from './img/sf.png'
 import winter from './img/winter.png'
