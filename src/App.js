@@ -7,21 +7,23 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Weatherbox1 from './components/Main/Weatherbox1';
 import Clock from './components/Main/Clock';
+import Weather from './components/Main/Weather';
+
 
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Clock />
-      <div>
-      {/* <Weatherbox1 /> */}
-      <MainNews />
+     <div className="App">
+        <Header />
+        <div class="line"></div>
+       <Clock />
+       <div>
+       <Weatherbox1 />
+         <Weather />
+       <MainNews />
+       </div>
+     </div>
 
-   
-
-      </div>
-    </div>
   );
 }
 
