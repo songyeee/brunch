@@ -17,8 +17,9 @@ function App() {
        <Clock />
        <div className="mainContainer">
       <div>
-      <Weather />
       <Weatherbox1 />
+      <Weather />
+      
       </div>
       <MainNews />
        </div>
