@@ -6,6 +6,7 @@ import { useCallback, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Weatherbox1 from './components/Main/Weatherbox1';
+import Clock from './components/Main/Clock';
 
 
 function App() {
@@ -16,7 +17,6 @@ function App() {
       <div>
       {/* <Weatherbox1 /> */}
       <MainNews />
-
       </div>
     </div>
   );
