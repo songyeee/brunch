@@ -66,6 +66,7 @@ function Weatherbox1() {
             }
         }
     }
+    
   return (
     <ContainerWrap>
         <div className='cotainer'>

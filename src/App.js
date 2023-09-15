@@ -15,7 +15,7 @@ function App() {
       <Header />
       <Clock />
       <div>
-      {/* <Weatherbox1 /> */}
+      <Weatherbox1 />
       <MainNews />
       </div>
     </div>
