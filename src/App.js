@@ -18,6 +18,8 @@ function App() {
        <div className="mainContainer">
       <div>
       <Weatherbox1 />
+      <Weather />
+      
       </div>
       <div className="news">
       <MainNews />
