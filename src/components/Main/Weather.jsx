@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
-
 import summer from './img/summer.png'
 import sf from './img/sf.png'
 import winter from './img/winter.png'
-
-
 
 
 const WeatherBlock = styled.div `
@@ -15,7 +12,6 @@ const WeatherBlock = styled.div `
     display: flex;
     justify-content: space-around;
     box-shadow: 0px 0px 8px 0px rgba(199, 199, 199, 0.68);
-
     h2 {
       display: flex;
       justify-content: space-around;
@@ -28,32 +24,24 @@ const WeatherBlock = styled.div `
       font-size : 20px;
       font-style: border;
     }
-
     img {
       height: 200px;
       width: 600px;
     }
-
     line {
       border: 1px solid black;
     }
-    
 `
-
-
-const API_KEY = '13370407832c91a4e9588f1ce73f6611'; 
-
+const API_KEY = '13370407832c91a4e9588f1ce73f6611';
 function Weather() {
   const [weatherData, setWeatherData] = useState(null);
   const [weatherImage, setWeatherImage] = useState(null);
-
   useEffect(() => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
           const latitude = position.coords.latitude;
           const longitude = position.coords.longitude;
-
           axios
             .get(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric`)
             .then((response) => {
@@ -72,7 +60,6 @@ function Weather() {
       console.error('Geolocation이 지원되지 않습니다.');
     }
   }, []);
-
   const ootd = (temp) => {
     if (temp < 10) {
       setWeatherImage(winter);
@@ -82,7 +69,6 @@ function Weather() {
       setWeatherImage(summer);
     }
   };
-
   return (
     <WeatherBlock>
     <div className="Weather">
@@ -100,16 +86,12 @@ function Weather() {
 
 
           <div className='line'></div>
-          <p> 👕ootd 추천👖: </p>
+          <p> ootd 추천: </p>
            <img src={weatherImage} />
-         
-         
           </div>
       )}
-  
     </div>
     </WeatherBlock>
   );
 }
-
 export default Weather;

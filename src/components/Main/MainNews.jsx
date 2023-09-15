@@ -30,7 +30,7 @@ function MainNews() {
   const articles = resolve.data.articles;
   
   return (
-    <div>
+    <div className='container'>
       {articles.map((article, idx) => <MainNewsItem key={idx} article={article} /> )}
     </div>
   )

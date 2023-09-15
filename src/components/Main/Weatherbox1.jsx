@@ -4,22 +4,30 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 const ContainerWrap = styled.div`
     .Weatherbox1{
-       
+        left: 50%;
+        top:50%;
+
     }
     input{
-        
-        height: 40px;
+        height: 30px;
+        width: 300px;
         border: 2px black solid;
         border-radius: 20px;
-        width: 300px;
+        width: 500px;
+        margin: auto;
+        text-align: center;
     }
 `;
 const ResultWrap = styled.div`
-    padding: 10px;
+    padding: 50px;
+    width: 300px;
     border: 1px black solid;
     border-radius:8px;
     border: 2px black solid;
     background-color: white;
+    margin-top: 70px;
+
+
     .city{
         font-size: 24px;
     }
@@ -33,12 +41,13 @@ const ResultWrap = styled.div`
         text-align: right;
         margin-top:8px;
     }
+
 `;
 function Weatherbox1() {
     const API_KEY = "13370407832c91a4e9588f1ce73f6611";
     const [location, setLocation] = useState('');
     const [result,setResult] = useState({});
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_KEY}`;
+    const url =`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_KEY}`;
     const searchWeather = async (e) =>{
         if(e.key ==='Enter'){
             try{
@@ -58,7 +67,7 @@ function Weatherbox1() {
     <ContainerWrap>
         <div className='Weatherbox1'>
             <input
-            placeholder = "도시를 입력하세요"
+            placeholder = "도시를 입력하세요."
             value={location}
             onChange={(e)=>setLocation(e.target.value)}
             type="text"
@@ -79,3 +88,9 @@ function Weatherbox1() {
   )
 }
 export default Weatherbox1;
+
+
+
+
+
+
