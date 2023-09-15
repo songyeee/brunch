@@ -1,6 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
+import boots from './img/boots.png';
+import cardigan from './img/cardigan.png';
+import coat from './img/coat.png';
+import hoodie from './img/hoodie.png';
+import jacket from './img/jacket.png';
+import jeans from './img/jeans.png';
+import lstshirts from './img/lstshirts.png';
+import puffer from './img/puffer.png';
+import rainboots from './img/rainboots.png';
+import sandals from './img/sandals.png';
+import scarf from './img/scarf.png';
+import shoes from './img/shoes.png';
+import shorts from './img/shorts.png';
+import sleeveless from './img/sleeveless.png';
+import sstshirts from './img/sstshirts.png';
+import sweater from './img/sweater.png';
+import sweater2 from './img/sweater2.png';
+import umbrella from './img/umbrella.png';
+import winterhat from './img/winterhat.png';
+
+
+
 
 const WeatherBlock = styled.div `
     border-radius: 10px;
@@ -29,6 +51,7 @@ const API_KEY = '13370407832c91a4e9588f1ce73f6611';
 
 function Weather() {
   const [weatherData, setWeatherData] = useState(null);
+  const [weatherImage, setWeatherImage] = useState(null);
 
   useEffect(() => {
     if (navigator.geolocation) {
@@ -41,6 +64,7 @@ function Weather() {
             .get(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric`)
             .then((response) => {
               setWeatherData(response.data);
+              ootd(response.data.main.temp);
             })
             .catch((error) => {
               console.error('에러가 발생하였습니다:', error);
@@ -55,6 +79,16 @@ function Weather() {
     }
   }, []);
 
+  const ootd = (temp) => {
+    if (temp < 10) {
+      setWeatherImage(boots);
+    } else if (temp < 20) {
+      setWeatherImage(cardigan);
+    } else {
+      setWeatherImage(sleeveless);
+    }
+  };
+
   return (
     <WeatherBlock>
     <div className="Weather">
@@ -64,8 +98,14 @@ function Weather() {
           <p>🚩지역: {weatherData.name}</p>
           <p>🌡️현재 온도: {weatherData.main.temp}°C</p>
           <p>🌞날씨: {weatherData.weather[0].description}</p>
+          <p>🌡️현재 온도: {weatherData.main.temp}°C</p>
+          <p>오늘의 ootd 추천: </p>
+           <img src={weatherImage} />
+
+
           </div>
       )}
+  
     </div>
     </WeatherBlock>
   );
