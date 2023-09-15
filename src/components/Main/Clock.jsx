@@ -3,8 +3,9 @@ import styled from 'styled-components';
 
 const ClockBlock = styled.div`
   font-size: 20px;
-  text-decoration: underline;
   text-align: right;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
 `
 
 class Clock extends Component {
@@ -39,7 +40,7 @@ class Clock extends Component {
         return (
           <ClockBlock>
           <div>
-            {`" Today ${year}/${month}/${day}, Now ${hours}:${minutes}"`}
+            {`🌼${year}년/${month}월/${day}일🌼 🕥${hours}시 ${minutes}분`}
           </div>
           </ClockBlock>
         )

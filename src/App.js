@@ -14,7 +14,8 @@ import Weather from './components/Main/Weather';
 function App() {
   return (
      <div className="App">
-       <Header />
+        <Header />
+        <div class="line"></div>
        <Clock />
        <div>
        <Weatherbox1 />
