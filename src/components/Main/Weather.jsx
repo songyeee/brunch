@@ -1,6 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
+import boots from './img/boots.png';
+import cardigan from './img/cardigan.png';
+import coat from './img/coat.png';
+import hoodie from './img/hoodie.png';
+import jacket from './img/jacket.png';
+import jeans from './img/jeans.png';
+import lstshirts from './img/lstshirts.png';
+import puffer from './img/puffer.png';
+import rainboots from './img/rainboots.png';
+import sandals from './img/sandals.png';
+import scarf from './img/scarf.png';
+import shoes from './img/shoes.png';
+import shorts from './img/shorts.png';
+import sleeveless from './img/sleeveless.png';
+import sstshirts from './img/sstshirts.png';
+import sweater from './img/sweater.png';
+import sweater2 from './img/sweater2.png';
+import umbrella from './img/umbrella.png';
+import winterhat from './img/winterhat.png';
+
+
+
 
 const WeatherBlock = styled.div `
     border-radius: 10px;
@@ -64,6 +86,7 @@ function Weather() {
           <p>🚩지역: {weatherData.name}</p>
           <p>🌡️현재 온도: {weatherData.main.temp}°C</p>
           <p>🌞날씨: {weatherData.weather[0].description}</p>
+          <p>오늘의 ootd 추천</p>
           </div>
       )}
     </div>
