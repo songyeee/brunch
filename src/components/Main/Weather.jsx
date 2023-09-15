@@ -1,25 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
-import boots from './img/boots.png';
-import cardigan from './img/cardigan.png';
-import coat from './img/coat.png';
-import hoodie from './img/hoodie.png';
-import jacket from './img/jacket.png';
-import jeans from './img/jeans.png';
-import lstshirts from './img/lstshirts.png';
-import puffer from './img/puffer.png';
-import rainboots from './img/rainboots.png';
-import sandals from './img/sandals.png';
-import scarf from './img/scarf.png';
-import shoes from './img/shoes.png';
-import shorts from './img/shorts.png';
-import sleeveless from './img/sleeveless.png';
-import sstshirts from './img/sstshirts.png';
-import sweater from './img/sweater.png';
-import sweater2 from './img/sweater2.png';
-import umbrella from './img/umbrella.png';
-import winterhat from './img/winterhat.png';
+
+import summer from './img/summer.png'
+import sf from './img/sf.png'
+import winter from './img/winter.png'
 
 
 
@@ -42,6 +27,15 @@ const WeatherBlock = styled.div `
       letter-spacing: 0.2rem;
       font-size : 20px;
       font-style: border;
+    }
+
+    img {
+      height: 200px;
+      width: 600px;
+    }
+
+    line {
+      border: 1px solid black;
     }
     
 `
@@ -81,11 +75,11 @@ function Weather() {
 
   const ootd = (temp) => {
     if (temp < 10) {
-      setWeatherImage(boots);
+      setWeatherImage(winter);
     } else if (temp < 20) {
-      setWeatherImage(cardigan);
+      setWeatherImage(sf);
     } else {
-      setWeatherImage(sleeveless);
+      setWeatherImage(summer);
     }
   };
 
@@ -96,13 +90,15 @@ function Weather() {
         <div>
           <h2>🍀오늘의 날씨🍀</h2>
           <p>🚩지역: {weatherData.name}</p>
-          <p>🌡️현재 온도: {weatherData.main.temp}°C</p>
           <p>🌞날씨: {weatherData.weather[0].description}</p>
-          <p>🌡️현재 온도: {weatherData.main.temp}°C</p>
-          <p>오늘의 ootd 추천: </p>
+          <p>🌡️현재 기온: {weatherData.main.temp}°C</p>
+          <p>🌡️오늘의 최저기온:{weatherData.main.temp_min}°C</p>
+          <p>🌡️오늘의 최고기온:{weatherData.main.temp_max}°C</p>
+          <div className='line'></div>
+          <p> 👕ootd 추천👖: </p>
            <img src={weatherImage} />
-
-
+         
+         
           </div>
       )}
   
