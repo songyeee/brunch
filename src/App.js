@@ -1,4 +1,4 @@
-import Header from './components/Header';
+import Header from './components/Main/Header';
 import MainNews from './components/Main/MainNews';
 import MainNewsItem from './components/Main/MainNewsItem';
 import usePromise from './components/hook/usePromise';
@@ -8,7 +8,6 @@ import './App.css';
 import Weatherbox1 from './components/Main/Weatherbox1';
 import Clock from './components/Main/Clock';
 import Weather from './components/Main/Weather';
-import Ootd from './components/Main/Ootd';
 
 
 
@@ -21,8 +20,8 @@ function App() {
        <Clock />
        <div className="mainContainer">
       <div>
-      <Weatherbox1 />
       <Weather />
+      <Weatherbox1 />
       </div>
       <MainNews />
        </div>
