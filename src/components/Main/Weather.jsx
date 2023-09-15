@@ -23,6 +23,7 @@ const WeatherBlock = styled.div `
       letter-spacing: 0.2rem;
       font-size : 20px;
       font-style: border;
+      margin-bottom: 30px;
     }
     img {
       height: 200px;
@@ -74,14 +75,14 @@ function Weather() {
     <div className="Weather">
       {weatherData && (
         <div>
-          <h2>오늘의 날씨</h2>
-          <p>지역: {weatherData.name}</p>
-          <p>날씨: {weatherData.weather[0].description}</p>
-          <p>현재 기온: {weatherData.main.temp}°C</p>
-          <p>오늘의 최저기온:{weatherData.main.temp_min}°C</p>
-          <p>오늘의 최고기온:{weatherData.main.temp_max}°C</p>
+          <h2>🍀오늘의 날씨🍀</h2>
+          <p>🚩지역: {weatherData.name}</p>
+          <p>🌞날씨: {weatherData.weather[0].description}</p>
+          <p>🌡️현재 기온: {weatherData.main.temp}°C</p>
+          <p>🌡️오늘의 최저기온:{weatherData.main.temp_min}°C</p>
+          <p>🌡️오늘의 최고기온:{weatherData.main.temp_max}°C</p>
           <div className='line'></div>
-          <p> ootd 추천: </p>
+          <p> 👕ootd 추천👖 : </p>
            <img src={weatherImage} />
           </div>
       )}
