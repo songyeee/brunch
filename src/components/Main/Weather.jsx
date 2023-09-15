@@ -51,6 +51,7 @@ const API_KEY = '13370407832c91a4e9588f1ce73f6611';
 
 function Weather() {
   const [weatherData, setWeatherData] = useState(null);
+  const [weatherImage, setWeatherImage] = useState(null);
 
   useEffect(() => {
     if (navigator.geolocation) {
@@ -63,6 +64,7 @@ function Weather() {
             .get(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric`)
             .then((response) => {
               setWeatherData(response.data);
+              ootd(response.data.main.temp);
             })
             .catch((error) => {
               console.error('에러가 발생하였습니다:', error);
@@ -77,6 +79,16 @@ function Weather() {
     }
   }, []);
 
+  const ootd = (temp) => {
+    if (temp < 10) {
+      setWeatherImage(boots);
+    } else if (temp < 20) {
+      setWeatherImage(cardigan);
+    } else {
+      setWeatherImage(sleeveless);
+    }
+  };
+
   return (
     <WeatherBlock>
     <div className="Weather">
@@ -86,9 +98,14 @@ function Weather() {
           <p>🚩지역: {weatherData.name}</p>
           <p>🌡️현재 온도: {weatherData.main.temp}°C</p>
           <p>🌞날씨: {weatherData.weather[0].description}</p>
-          <p>오늘의 ootd 추천</p>
+          <p>오늘의 ootd 추천: </p>
+           <img src={weatherImage} />
+         
+         
+
           </div>
       )}
+  
     </div>
     </WeatherBlock>
   );
