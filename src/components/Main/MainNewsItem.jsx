@@ -4,9 +4,9 @@ import styled from 'styled-components';
 const MainNewsItemBlock = styled.div`
   display: flex;
   padding: 1rem;
-  margin: 1rem;
-  box-shadow: 0px 0px 8px 0px rgba(199, 199, 199, 0.68);
-  border-radius: 10px;
+  margin: 0.8rem;
+  margin-top: 0px;
+  border-bottom: 1px solid rgba(199, 199, 199, 0.68);
 
 
   a{
@@ -32,6 +32,7 @@ const MainNewsItemBlock = styled.div`
   article {
     align-content:center;
   }
+
   `
  
 
@@ -47,6 +48,7 @@ function MainNewsItem({article}) {
         </div>
       </a>
     </MainNewsItemBlock>
+    
     )
   };
  

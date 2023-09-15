@@ -95,6 +95,9 @@ function Weather() {
           <p>🌡️오늘의 최저기온:{weatherData.main.temp_min}°C</p>
           <p>🌡️오늘의 최고기온:{weatherData.main.temp_max}°C</p>
 
+        
+
+
 
           <div className='line'></div>
           <p> 👕ootd 추천👖: </p>
