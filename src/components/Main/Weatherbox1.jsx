@@ -4,10 +4,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 const ContainerWrap = styled.div`
     .Weatherbox1{
-        left: 50%;
-        top:50%;
         transform: translate(-50%, -50%);
-        position: absolute;
         padding: 20px;
     }
     input{

@@ -17,10 +17,12 @@ function App() {
         <Header />
         <div class="line"></div>
        <Clock />
-       <div>
-       <Weatherbox1 />
-         <Weather />
-       <MainNews />
+       <div className="mainContainer">
+      <div>
+      <Weatherbox1 />
+      <Weather />
+      </div>
+      <MainNews />
        </div>
      </div>
 
