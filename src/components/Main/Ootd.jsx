@@ -1,4 +1,5 @@
 import React from 'react'
+import "Utill.js";
 
 function Ootd() {
   return (
@@ -6,4 +7,4 @@ function Ootd() {
   )
 }
 
-export default Ootd
+export default Ootd;

@@ -23,6 +23,7 @@ function App() {
       </div>
       <MainNews />
        </div>
+       <Ootd />
      </div>
   );
 }
