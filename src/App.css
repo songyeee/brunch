@@ -2,7 +2,7 @@
 
 .App {
     font-family: 'Orbit', sans-serif;
-    background-color: rgb(255, 254, 239);
+    background-color: #e2fffe;
 }
 
 .App .Weatherbox1 {
@@ -36,7 +36,6 @@
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    height: 600px;
     background-color: white;
 
 }
