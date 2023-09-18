@@ -14,11 +14,10 @@ const ContainerWrap = styled.div`
 
     }
     input{
-        height: 30px;
-        width: 300px;
+        height: 50px;
+        width: 500px;
         border: 2px black solid;
         border-radius: 20px;
-        width: 500px;
         margin: auto;
         text-align: center;
     }
@@ -63,7 +62,7 @@ function Weatherbox1() {
                 setResult(data.data);
             }
             catch(err){
-                alert(err);
+                alert('없는 지역입니다.');
             }
         }
     }
