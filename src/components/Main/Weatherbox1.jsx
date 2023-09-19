@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const ContainerWrap = styled.div`
 .resultbox{
-    margin-left:29%;
+    margin-left:440px;
 }
    
     .Weatherbox1{
