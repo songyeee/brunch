@@ -25,7 +25,7 @@ Weather API로 날씨 정보를 받아서 별도의 입력 없이도 현재 위�
      * 10 ºC 이하일 경우\
     ![Alt text](/READMEImg/기능구현25.PNG)
 
-* 오늘의 날짜와 시간 출력 (분 단위로 렌더링 )
+* 오늘의 날짜와 시간 출력 (분 단위로 렌더링 )\
 ![Alt text](/READMEImg/기능구현26.PNG)
 * 지역 명을 입력하면 입력 받은 나라, 도시 이름, 온도, 기상 출력
 ![Alt text](/READMEImg/기능구현27.PNG)
