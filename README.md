@@ -12,6 +12,9 @@ Weatherbox - axios, useEffect, useState, styled-components
 
 ## 기능 및 기능 구현
 
+* Main 화면 구성
+![Alt text](/READMEImg/기능구현29.PNG)
+
 * 받아온 뉴스 데이터 속 제목과 내용을 사용자에게 일정한 길이로 출력   
 * 뉴스 API 에서 오늘의 뉴스 data를 받아와서 매일 새로운 뉴스 기사 출력
 ![Alt text](/READMEImg/기능구현24.PNG)
@@ -28,5 +31,6 @@ Weather API로 날씨 정보를 받아서 별도의 입력 없이도 현재 위�
 * 오늘의 날짜와 시간 출력 (분 단위로 렌더링 )\
 ![Alt text](/READMEImg/기능구현26.PNG)
 * 지역 명을 입력하면 입력 받은 나라, 도시 이름, 온도, 기상 출력
+![Alt text](/READMEImg/기능구현28.PNG)
 ![Alt text](/READMEImg/기능구현27.PNG)
 
