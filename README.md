@@ -3,17 +3,18 @@
 
 ##  페이지별 중요 기능
 
-usePromise - hook
-Clock - render, component
-MainNews - useEffect, useState, usePromise
-MainNewsItem - styled-components
-Weather - axios, useEffect, useState, styled-components
-Weatherbox - axios, useEffect, useState, styled-components
+usePromise - hook\
+Clock - render, component\
+MainNews - useEffect, useState, usePromise\
+MainNewsItem - styled-components\
+Weather - axios, useEffect, useState, styled-components\
+Weatherbox - axios, useEffect, useState, styled-components\
 
 ### 기능 및 기능 구현
 
 받아온 뉴스 데이터 속 제목과 내용을 사용자에게 일정한 길이로 출력 
 뉴스 API 에서 오늘의 뉴스 data를 받아와서 매일 새로운 뉴스 기사 출력
+
 
 ### `npm run build`
 
