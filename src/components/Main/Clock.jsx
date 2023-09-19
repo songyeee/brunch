@@ -6,6 +6,7 @@ const ClockBlock = styled.div`
   text-align: right;
   font-weight: bold;
   letter-spacing: 0.2rem;
+  margin-right: 70px;
 `
 
 class Clock extends Component {
