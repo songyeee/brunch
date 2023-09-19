@@ -1,7 +1,7 @@
-#  REACT PROJECT
-한 눈에 오늘의 날씨 정보와 뉴스 정보를 확인할 수 있는 페이지
+#  `REACT PROJECT`
+언제 어디서든 간편하게 볼 수 있는 오늘의 정보(뉴스정보, 날씨정보)를 한 페이지에서 확인 할 수 있는 프로그램
 
-##  페이지별 중요 기능
+##  `페이지별 중요 기능`
 
 usePromise - hook\
 Clock - render, component\
@@ -10,21 +10,17 @@ MainNewsItem - styled-components\
 Weather - axios, useEffect, useState, styled-components\
 Weatherbox - axios, useEffect, useState, styled-components
 
-### `사용한 기술`
+## `기능 및 기능 구현`
 
-### `기능 및 기능 구현`
+* 받아온 뉴스 데이터 속 제목과 내용을 사용자에게 일정한 길이로 출력   
+* 뉴스 API 에서 오늘의 뉴스 data를 받아와서 매일 새로운 뉴스 기사 출력
+![Alt text](/READMEImg/기능구현22.PNG)
 
-받아온 뉴스 데이터 속 제목과 내용을 사용자에게 일정한 길이로 출력\ 
-뉴스 API 에서 오늘의 뉴스 data를 받아와서 매일 새로운 뉴스 기사 출력\
-file:///C:/Users/admin/Desktop/%EB%AC%B8%EC%A0%9C%EC%82%AC%EC%A7%84/%EA%B8%B0%EB%8A%A5%EA%B5%AC%ED%98%8422.PNG
+* Geolocation API로 사용자의 현재 위치 정보 \
+Weather API로 날씨 정보를 받아서 별도의 입력 없이도 현재 위치의 날씨를 바로 확인할 수 있도록 구현 (현재 날씨, 현재 기온, 오늘의 최고 · 최저 날씨)
+* 현재 기온 data를 받아서, 일정한 범위마다 다른  OOTD 추천 
+![Alt text](/READMEImg/기능구현22.PNG)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
 
