@@ -1,23 +1,19 @@
-# Getting Started with Create React App
+# PROJECT
+한 눈에 오늘의 날씨 정보와 뉴스 정보를 확인할 수 있는 페이지
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##  페이지별 중요 기능
 
-## Available Scripts
+usePromise - hook
+Clock - render, component
+MainNews - useEffect, useState, usePromise
+MainNewsItem - styled-components
+Weather - axios, useEffect, useState, styled-components
+Weatherbox - axios, useEffect, useState, styled-components
 
-In the project directory, you can run:
+### 기능 및 기능 구현
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+받아온 뉴스 데이터 속 제목과 내용을 사용자에게 일정한 길이로 출력 
+뉴스 API 에서 오늘의 뉴스 data를 받아와서 매일 새로운 뉴스 기사 출력
 
 ### `npm run build`
 
