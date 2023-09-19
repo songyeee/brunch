@@ -1,4 +1,4 @@
-# PROJECT
+#  REACT PROJECT
 한 눈에 오늘의 날씨 정보와 뉴스 정보를 확인할 수 있는 페이지
 
 ##  페이지별 중요 기능
@@ -8,15 +8,15 @@ Clock - render, component\
 MainNews - useEffect, useState, usePromise\
 MainNewsItem - styled-components\
 Weather - axios, useEffect, useState, styled-components\
-Weatherbox - axios, useEffect, useState, styled-components\
+Weatherbox - axios, useEffect, useState, styled-components
 
-### 기능 및 기능 구현
+### `사용한 기술`
 
-받아온 뉴스 데이터 속 제목과 내용을 사용자에게 일정한 길이로 출력 
-뉴스 API 에서 오늘의 뉴스 data를 받아와서 매일 새로운 뉴스 기사 출력
+### `기능 및 기능 구현`
 
-
-### `npm run build`
+받아온 뉴스 데이터 속 제목과 내용을 사용자에게 일정한 길이로 출력\ 
+뉴스 API 에서 오늘의 뉴스 data를 받아와서 매일 새로운 뉴스 기사 출력\
+file:///C:/Users/admin/Desktop/%EB%AC%B8%EC%A0%9C%EC%82%AC%EC%A7%84/%EA%B8%B0%EB%8A%A5%EA%B5%AC%ED%98%8422.PNG
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
