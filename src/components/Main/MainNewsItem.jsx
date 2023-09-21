@@ -44,8 +44,8 @@ function MainNewsItem({article}) {
       <a href={url}>
         <img src = {urlToImage ?? 'https://via.placeholder.com/160'} alt='이미지 없음' />
         <div className='article'>
-        <h1>{title.slice(0,30)+'...'}</h1>
-        <p>{description.slice(0,40)+'...'}</p>
+        <h1>{ title && title.slice(0,30)+'...'}</h1>
+        <p>{ description && description.slice(0,40)+'...'}</p>
         </div>
       </a>
     </MainNewsItemBlock>
