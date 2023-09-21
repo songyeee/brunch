@@ -2,9 +2,11 @@ import axios from 'axios';
 import { async } from 'q';
 import React, { useState } from 'react';
 import styled from 'styled-components';
+
 const ContainerWrap = styled.div`
 .resultbox{
-    margin-left:30%;
+    overflow: auto;
+    margin-left:29%;
 }
    
     .Weatherbox1{
@@ -65,6 +67,7 @@ function Weatherbox1() {
             }
         }
     }
+
   return (
     <ContainerWrap>
         <div className='Weatherbox1'>
@@ -91,6 +94,7 @@ function Weatherbox1() {
     </ContainerWrap>
   )
 }
+
 export default Weatherbox1;
 
 

@@ -11,7 +11,9 @@ const WeatherBlock = styled.div `
     margin: 0% auto;
     display: flex;
     justify-content: space-around;
-    box-shadow: 0px 0px 8px 0px rgba(199, 199, 199, 0.68);
+    box-shadow: 0px 0px 10px 0px rgba(199, 199, 199, 0.68);
+    margin: 30px;
+
     h2 {
       display: flex;
       justify-content: space-around;
@@ -82,7 +84,7 @@ function Weather() {
           <p>🌡️오늘의 최저기온:{weatherData.main.temp_min}°C</p>
           <p>🌡️오늘의 최고기온:{weatherData.main.temp_max}°C</p>
           <div className='line'></div>
-          <p> 👕ootd 추천👖 : </p>
+          <p> 👕ootd 추천👖  </p>
            <img src={weatherImage} />
           </div>
       )}
