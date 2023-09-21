@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Myeongjo&family=Orbit&family=Tulpen+One&display=swap');
+
+.App {
+    font-family: 'Orbit', sans-serif;
+    background-color: #e2fffe;
+}
+
+.App .Weatherbox1 {
+    display: flex;
+    
+}
+
+.App .line {
+    border-top: 1px solid #444444;
+    margin: 30px 0px;
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.App .news {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 0px rgba(199, 199, 199, 0.68);
+    margin-top: 46px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+    overflow : scroll;
+    height: 600px;
+}
+
+.App .weather {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: white;
+
+}

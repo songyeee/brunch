@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, {useEffect, useState} from 'react'
 import MainNewsItem from './MainNewsItem';
 import usePromise from '../hook/usePromise';
-
+import styled from 'styled-components';
 
 
 function MainNews() {
@@ -30,11 +30,12 @@ function MainNews() {
   const articles = resolve.data.articles;
   
   return (
-    <div>
+    <div className='container'>
       {articles.map((article, idx) => <MainNewsItem key={idx} article={article} /> )}
     </div>
   )
 }
+
 
 
 export default MainNews;
